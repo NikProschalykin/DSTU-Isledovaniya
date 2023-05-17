@@ -2,6 +2,8 @@ import math
 import networkx as nx
 import matplotlib.pyplot as plt
 
+# minSlice() -  это костыль для того, чтобы вывести минимальный разрез,
+# для других графов он скорее всего будет работать не верно, но она не спрашивает про него обычно
 def minSlice(V):
     G = nx.DiGraph()
     for index in range(0, len(V)):
